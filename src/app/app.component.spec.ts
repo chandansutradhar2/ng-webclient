@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'ng-webclient'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng-webclient');
+    expect(app.title).toEqual('ng-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-webclient app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-client app is running!');
   });
 });
